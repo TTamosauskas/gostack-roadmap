@@ -9,33 +9,33 @@ import { Container, RoadMap } from "./styles";
 import initialStateGoals from "../../goals";
 
 function Map() {
-  const [goals, setGoals] = useState();
-
-  useEffect(() => {
-    localStorage.setItem('goals', JSON.stringify(goals));
-  }, [goals]);
+  const [goals, setGoals] = useState([]);
 
   useEffect(() => {
     const storageGoals = localStorage.getItem('goals');
   
     if (storageGoals) {
-      setGoals(JSON.parse(goals));
+      setGoals(JSON.parse(storageGoals));
     } else {
       setGoals(initialStateGoals)
     }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('goals', JSON.stringify(goals));
   }, [goals]);
 
-  if (!goals) {
-    return (
-      <>
-      <h1>Carregando</h1>
-    </>
-    )
+  function clearCache() {
+    localStorage.setItem('goals', initialStateGoals);
+    setGoals(initialStateGoals)
   }
 
   return (
     <>
       <Header />
+      <button onClick={clearCache} style={{color: "#FFF", marginTop: 20, marginLeft: 5, fontWeight: 'bold'}}>
+        Zerar
+      </button>
       <Container>
       
         <RoadMap>
