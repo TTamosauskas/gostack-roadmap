@@ -12,6 +12,7 @@ export default function BadgePicker({ data, goals, setGoals }) {
 
   return (
     <Container>
+      <h3>Arraste as tarefas completas:</h3>
       <DropTarget
         onHit={() => {
           console.log("drop");

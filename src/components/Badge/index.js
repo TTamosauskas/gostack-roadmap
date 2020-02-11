@@ -14,19 +14,30 @@ export default function Badge({ data, goals, setGoals, active }) {
         onDrop={() => {
           const newState = goals.map(goal => {
             if (goal.id === data.id) {
+
+              
+              // FASES 
+              if (goal.id === 6)  { alert("FASE 1 COMPLETA!"); }
+              if (goal.id === 12) { alert("FASE 2 COMPLETA!"); }
+              if (goal.id === 18) { alert("FASE 2 COMPLETA!"); }
+              if (goal.id === 21) { alert("FASE 2 COMPLETA!"); }
+
               return {
                 ...goal,
                 active: true
-              };
-            }
+                     };
+                             }
 
+           
             return goal;
+            
+
           });
 
           setGoals(newState);
         }}
       >
-        <div className="badge-container">
+        <div className={"badge-container" + " bdg-" + data.id}>
           <div>
             <label>{data.id}</label>
             {active && <MdCheckCircle size={24} color="#2d5a35" />}

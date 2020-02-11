@@ -9,5 +9,5 @@ export const RoadMap = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-height: 100vh;
+  max-height: 100vh; 
 `;

@@ -2,14 +2,12 @@ import React from "react";
 
 import { Container } from "./styles";
 
-import rocketseat from "../../assets/rocketseat.svg";
-import gostack from "../../assets/gostack.svg";
+import clube from "../../assets/logo.png";
 
 export default function Header() {
   return (
     <Container>
-      <img src={rocketseat} alt="Rocketseat" />
-      <img src={gostack} alt="Gostack" />
+      <img src={clube} alt="Clube do Valor" />
     </Container>
   );
 }

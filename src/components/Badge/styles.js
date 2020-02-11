@@ -8,8 +8,8 @@ export const Container = styled.div`
     height: 120px;
     background: ${props =>
       props.active
-        ? "linear-gradient(0deg,#18671f 0%,#1c1f1c 80%)"
-        : "#190e35a8"};
+        ? "#ffc107"
+        : "transparent"};
     padding: 8px;
     margin: 16px;
     transition: all 0.2s;
@@ -21,13 +21,13 @@ export const Container = styled.div`
     }
 
     label {
-      color: ${props => (props.active ? "#18671f" : "#392264")};
+      color: ${props => (props.active ? "#3F51B5" : "#ff9800f0")};
       font-weight: bold;
       font-size: 28px;
     }
 
     p {
-      color: ${props => (props.active ? "#ddd" : "#aaa")};
+      color: ${props => (props.active ? "#000" : "#aaa")};
       font-size: 11px;
       margin-top: 8px;
     }
@@ -40,5 +40,13 @@ export const Container = styled.div`
     label {
       color: #18671f;
     }
+
   }
+  .droptarget .badge-container.bdg-1, 
+  .droptarget .badge-container.bdg-2, 
+  .droptarget .badge-container.bdg-3 { background: "#fff"} 
+
+
+
+
 `;

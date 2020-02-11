@@ -1,5 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
+import Fundo from "../src/assets/fundo.png";
+
 export default createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
@@ -20,7 +22,7 @@ export default createGlobalStyle`
 
   body {
     -webkit-font-smoothing: antialiased !important;
-    background: #131217;
+    background: #3F51B5;
     background-size: cover;
   }
 
@@ -41,4 +43,6 @@ export default createGlobalStyle`
     background: none;
     border: 0;
   }
+
+
 `;
