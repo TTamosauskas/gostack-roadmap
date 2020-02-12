@@ -14,7 +14,7 @@ export default function BadgePicker({ data, goals, setGoals }) {
   return (
    
     <Container>
-      <Medals />
+      <Medals goals={data} />
       <h3>Arraste as tarefas completas:</h3>
       <DropTarget
         onHit={() => {
