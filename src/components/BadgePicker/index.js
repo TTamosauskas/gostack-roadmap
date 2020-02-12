@@ -2,6 +2,7 @@ import React, { useMemo } from "react";
 import { DropTarget } from "react-drag-drop-container";
 
 import Badge from "../Badge";
+import Medals from "../Medals";
 
 import { Container } from "./styles";
 
@@ -11,7 +12,9 @@ export default function BadgePicker({ data, goals, setGoals }) {
   }, [data]);
 
   return (
+   
     <Container>
+      <Medals />
       <h3>Arraste as tarefas completas:</h3>
       <DropTarget
         onHit={() => {
