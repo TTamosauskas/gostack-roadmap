@@ -122,17 +122,12 @@ export default [
   },
   {
     id: 25,
-    description: 'Rebalancear a carteira trimestralmente',
+    description: 'Completar o cursp MPI',
     active: false,
   },
   {
     id: 26,
-    description: 'Completar o cursp MPI',
-    active: false,
-  },
-  {
-    id: 27,
-    description: 'Completar o cursp MPI',
+    description: 'Rebalancear a carteira trimestralmente',
     active: false,
   },
   {
@@ -141,12 +136,17 @@ export default [
     active: false,
   },
   {
-    id: 27,
+    id: 28,
+    description: 'Compartilhar seus resultados no grupo fechado',
+    active: false,
+  },
+  {
+    id: 29,
     description: 'Atingir uma meta de longo prazo',
     active: false,
   },
   {
-    id: 27,
+    id: 30,
     description: 'Alcançar a liberdade Financeira',
     active: false,
   },

@@ -8,21 +8,28 @@ export default function Medals({ goals }) {
       <div id="quadro-de-medalhas">
         <h3> Quadro de Medalhas: </h3>
         {goals.map(goal => {
-          if (goal.active === true && goal.id === 6) {
+          if (goal.active === true && goal.id === 3) {
+            return (
+              <h5>
+                <span>🏃</span> Maratonista
+              </h5>
+            );
+          }
+          if (goal.active === true && goal.id === 5) {
             return (
               <h5>
                 <span>😍</span> Boas intenções
               </h5>
             );
           }
-          if (goal.active === true && goal.id === 9) {
+          if (goal.active === true && goal.id === 7) {
             return (
               <h5>
-                <span>💰</span> Organizado
+                <span>💰</span> Super Organizado
               </h5>
             );
           }
-          if (goal.active === true && goal.id === 7) {
+          if (goal.active === true && goal.id === 9) {
             return (
               <h5>
                 <span>👨‍🎓 </span> Aluno dedicado
@@ -46,7 +53,7 @@ export default function Medals({ goals }) {
           if (goal.active === true && goal.id === 13) {
             return (
               <h5>
-                <span>🏆</span> Pronto para Emergências{' '}
+                <span>🏆</span> Pronto para Voar
               </h5>
             );
           }
@@ -63,6 +70,22 @@ export default function Medals({ goals }) {
                 <span>👑</span> Investidor Inteligente
               </h5>
             );
+          }
+
+          if (goal.active === true && goal.id === 24) {
+            return (
+              <h5>
+                <span>😎</span> Medalha Disciplina Jedi
+              </h5>
+            );
+
+            if (goal.active === true && goal.id === 30) {
+              return (
+                <h5>
+                  <span>😎</span> Medalha Liberdade Financeira
+                </h5>
+              );
+            }
           }
         })}
       </div>
