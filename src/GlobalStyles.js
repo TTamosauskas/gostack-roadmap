@@ -16,14 +16,14 @@ export default createGlobalStyle`
     outline: 0;
   }
 
-  html, body, #root {
+            html, body, #root {
     height: 100%;
   }
 
-  body {
+                body {
     -webkit-font-smoothing: antialiased !important;
-    background: #3F51B5;
-    background-size: cover;
+           background: #3F51B5;
+    background-size: cover
   }
 
   body, input, button, textarea {
