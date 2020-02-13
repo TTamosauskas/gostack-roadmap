@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: grid;
@@ -9,5 +9,5 @@ export const RoadMap = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-height: 100vh; 
+  max-height: 100vh;
 `;

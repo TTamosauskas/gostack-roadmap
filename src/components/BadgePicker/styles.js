@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
@@ -6,7 +6,13 @@ export const Container = styled.div`
   align-items: center;
   padding: 16px;
 
-  h3 {color:#fff}
+  h3 {
+    color: #fff;
+  }
 
-
+  #picker {
+    height: 750px;
+    overflow: hidden;
+    box-shadow: 0px 10px 8px -10px rgba(255, 255, 255, 1);
+  }
 `;

@@ -75,17 +75,16 @@ export default function Medals({ goals }) {
           if (goal.active === true && goal.id === 24) {
             return (
               <h5>
-                <span>😎</span> Medalha Disciplina Jedi
+                <span>😎</span> Disciplina Jedi
               </h5>
             );
-
-            if (goal.active === true && goal.id === 30) {
-              return (
-                <h5>
-                  <span>😎</span> Medalha Liberdade Financeira
-                </h5>
-              );
-            }
+          }
+          if (goal.active === true && goal.id === 30) {
+            return (
+              <h5>
+                <span>🤑</span> Liberdade Financeira
+              </h5>
+            );
           }
         })}
       </div>

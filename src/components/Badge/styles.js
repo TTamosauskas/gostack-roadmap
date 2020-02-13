@@ -1,15 +1,12 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   .badge-container {
     border-radius: 8px;
-    border: ${props => (props.active ? "1px solid #ddd" : "1px dashed #ddd")};
+    border: ${props => (props.active ? '1px solid #ddd' : '1px dashed #ddd')};
     width: 120px;
     height: 120px;
-    background: ${props =>
-      props.active
-        ? "#ffc107"
-        : "transparent"};
+    background: ${props => (props.active ? '#ffc107' : 'transparent')};
     padding: 8px;
     margin: 16px;
     transition: all 0.2s;
@@ -21,13 +18,13 @@ export const Container = styled.div`
     }
 
     label {
-      color: ${props => (props.active ? "#3F51B5" : "#ff9800f0")};
+      color: ${props => (props.active ? '#3F51B5' : '#ff9800f0')};
       font-weight: bold;
       font-size: 28px;
     }
 
     p {
-      color: ${props => (props.active ? "#000" : "#aaa")};
+      color: ${props => (props.active ? '#000' : '#aaa')};
       font-size: 11px;
       margin-top: 8px;
     }
@@ -40,13 +37,10 @@ export const Container = styled.div`
     label {
       color: #18671f;
     }
-
   }
-  .droptarget .badge-container.bdg-1, 
-  .droptarget .badge-container.bdg-2, 
-  .droptarget .badge-container.bdg-3 { background: "#fff"} 
-
-
-
-
+  .droptarget .badge-container.bdg-1,
+  .droptarget .badge-container.bdg-2,
+  .droptarget .badge-container.bdg-3 {
+    background: '#fff';
+  }
 `;
