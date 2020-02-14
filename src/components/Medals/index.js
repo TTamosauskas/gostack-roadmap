@@ -25,14 +25,14 @@ export default function Medals({ goals }) {
           if (goal.active === true && goal.id === 7) {
             return (
               <h5>
-                <span>💰</span> Super Organizado
+                <span>💰</span> Aluno dedicado
               </h5>
             );
           }
           if (goal.active === true && goal.id === 9) {
             return (
               <h5>
-                <span>👨‍🎓 </span> Aluno dedicado
+                <span>👨‍🎓 </span> Super Organizado
               </h5>
             );
           }

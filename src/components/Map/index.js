@@ -38,19 +38,7 @@ function Map() {
   }
 
   return (
-    <div className="area">
-      <ul className="circles">
-        <li />
-        <li />
-        <li />
-        <li />
-        <li />
-        <li />
-        <li />
-        <li />
-        <li />
-        <li />
-      </ul>
+    <div>
       <Header />
       {/* Botão para limpar o cache */}
       <button
