@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+
 import { MdCheckCircle } from 'react-icons/md';
 
 import { DragDropContainer, DropTarget } from 'react-drag-drop-container';
@@ -6,8 +7,64 @@ import { toast } from 'react-toastify';
 
 import { Container } from './styles';
 
-export default function Badge({ data, goals, setGoals, active }) {
+import initialStateGoals from '../../goals';
+
+function Badge({ data, goals, setGoals, active }) {
   const DragAndDropComponent = active ? DragDropContainer : DropTarget;
+
+  function Fase2() {
+    toast.success('🚀 FASE 2 LIBERADA!', {
+      position: 'top-center',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+    });
+
+    goals[6].locked = false;
+    goals[7].locked = false;
+    goals[8].locked = false;
+    goals[9].locked = false;
+    goals[10].locked = false;
+    goals[11].locked = false;
+  }
+
+  function Fase3() {
+    toast.success('🚀 FASE 3 LIBERADA!', {
+      position: 'top-center',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+    });
+
+    goals[12].locked = false;
+    goals[13].locked = false;
+    goals[14].locked = false;
+    goals[15].locked = false;
+    goals[16].locked = false;
+    goals[17].locked = false;
+  }
+
+  function Fase4() {
+    toast.success('🚀 FASE 4 LIBERADA!', {
+      position: 'top-center',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+    });
+
+    goals[13].locked = false;
+    goals[14].locked = false;
+    goals[15].locked = false;
+    goals[16].locked = false;
+    goals[17].locked = false;
+    goals[18].locked = false;
+  }
 
   return (
     <Container active={active}>
@@ -38,6 +95,10 @@ export default function Badge({ data, goals, setGoals, active }) {
                   pauseOnHover: true,
                   draggable: true,
                 });
+              }
+
+              if (goal.id === 6) {
+                Fase2();
               }
 
               if (goal.id === 7) {
@@ -84,6 +145,10 @@ export default function Badge({ data, goals, setGoals, active }) {
                 });
               }
 
+              if (goal.id === 12) {
+                Fase3();
+              }
+
               if (goal.id === 13) {
                 toast('🥇 Aquiririu a Medalha Pronto para Voar 🏆', {
                   position: 'top-right',
@@ -104,6 +169,10 @@ export default function Badge({ data, goals, setGoals, active }) {
                   pauseOnHover: true,
                   draggable: true,
                 });
+              }
+
+              if (goal.id === 18) {
+                Fase4();
               }
 
               if (goal.id === 20) {
@@ -142,6 +211,7 @@ export default function Badge({ data, goals, setGoals, active }) {
               return {
                 ...goal,
                 active: true,
+                locked: false,
               };
             }
 
@@ -151,15 +221,22 @@ export default function Badge({ data, goals, setGoals, active }) {
           setGoals(newState);
         }}
       >
-        <div className={`${'badge-container' + ' bdg-'}${data.id}`}>
-          <div>
-            <label>{data.id}</label>
-            {active && <MdCheckCircle size={24} color="#2d5a35" />}
+        {data.locked === false ? (
+          <div className={`${'badge-container' + ' bdg-'}${data.id}`}>
+            {' '}
+            <div>
+              {' '}
+              <label>{data.id}</label>{' '}
+              {active && <MdCheckCircle size={24} color="#2d5a35" />}{' '}
+            </div>{' '}
+            <p>{data.description}</p>{' '}
           </div>
-
-          <p>{data.description}</p>
-        </div>
+        ) : (
+          ''
+        )}
       </DragAndDropComponent>
     </Container>
   );
 }
+
+export default Badge;

@@ -40,18 +40,7 @@ function Map() {
   return (
     <div>
       <Header />
-      {/* Botão para limpar o cache */}
-      <button
-        onClick={clearCache}
-        style={{
-          color: '#FFF',
-          marginTop: 20,
-          marginLeft: 5,
-          fontWeight: 'bold',
-        }}
-      >
-        Zerar
-      </button>
+
       <Container>
         <RoadMap>
           {goals.map(goal => (
@@ -61,12 +50,25 @@ function Map() {
               goals={goals}
               setGoals={setGoals}
               active={goal.active}
+              locked={goal.locked}
             />
           ))}
         </RoadMap>
 
         <BadgePicker data={goals} goals={goals} setGoals={setGoals} />
       </Container>
+      {/* Botão para limpar o cache */}
+      <button
+        onClick={clearCache}
+        style={{
+          color: '#FFF',
+          marginTop: 20,
+          marginLeft: 30,
+          fontWeight: 'bold',
+        }}
+      >
+        Zerar conquistas
+      </button>
     </div>
   );
 }
