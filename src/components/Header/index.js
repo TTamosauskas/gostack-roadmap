@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
-import { Container } from "./styles";
+import { Container } from './styles';
 
-import clube from "../../assets/logo.png";
+import clube from '../../assets/logo2.png';
 
 export default function Header() {
   return (
     <Container>
-      <img src={clube} alt="Clube do Valor" />
+      <img width="100px" src={clube} alt="Clube do Valor" />
     </Container>
   );
 }

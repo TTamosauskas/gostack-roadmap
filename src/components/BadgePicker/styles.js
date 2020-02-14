@@ -11,7 +11,7 @@ export const Container = styled.div`
   }
 
   #picker {
-    height: 750px;
+    height: 600px;
     overflow: hidden;
     text-align: right;
     box-shadow: 0px 10px 8px -10px rgba(255, 255, 255, 1);

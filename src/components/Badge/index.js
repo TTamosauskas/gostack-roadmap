@@ -58,12 +58,30 @@ function Badge({ data, goals, setGoals, active }) {
       draggable: true,
     });
 
-    goals[13].locked = false;
-    goals[14].locked = false;
-    goals[15].locked = false;
-    goals[16].locked = false;
-    goals[17].locked = false;
     goals[18].locked = false;
+    goals[19].locked = false;
+    goals[20].locked = false;
+    goals[21].locked = false;
+    goals[22].locked = false;
+    goals[23].locked = false;
+  }
+
+  function Fase5() {
+    toast.error('🚀 FASE FINAL!!!', {
+      position: 'top-center',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+    });
+
+    goals[24].locked = false;
+    goals[25].locked = false;
+    goals[26].locked = false;
+    goals[27].locked = false;
+    goals[28].locked = false;
+    goals[29].locked = false;
   }
 
   return (
@@ -76,9 +94,9 @@ function Badge({ data, goals, setGoals, active }) {
               // FASES
 
               if (goal.id === 3) {
-                toast('🥇 Aquiririu Medalha Maratonista 🏃', {
+                toast.info('🥇 Medalha Levando a Sério 🏃', {
                   position: 'top-right',
-                  autoClose: 3000,
+                  autoClose: 5000,
                   hideProgressBar: false,
                   closeOnClick: true,
                   pauseOnHover: true,
@@ -87,7 +105,7 @@ function Badge({ data, goals, setGoals, active }) {
               }
 
               if (goal.id === 5) {
-                toast('🥇 Aquiririu Medalha Boas Intenções 😍', {
+                toast.info('🥇 Medalha Boas Intenções 😍', {
                   position: 'top-right',
                   autoClose: 3000,
                   hideProgressBar: false,
@@ -102,7 +120,7 @@ function Badge({ data, goals, setGoals, active }) {
               }
 
               if (goal.id === 7) {
-                toast('🥇 Aquiririu a Medalha Aluno Dedicado 👨‍🎓', {
+                toast.info('🥇 Medalha Aluno Dedicado 👨‍🎓', {
                   position: 'top-right',
                   autoClose: 3000,
                   hideProgressBar: false,
@@ -113,7 +131,7 @@ function Badge({ data, goals, setGoals, active }) {
               }
 
               if (goal.id === 9) {
-                toast('🥇 Aquiririu a Medalha Super Organizado 💰', {
+                toast.info('🥇 Medalha Super Organizado 💰', {
                   position: 'top-right',
                   autoClose: 3000,
                   hideProgressBar: false,
@@ -124,7 +142,7 @@ function Badge({ data, goals, setGoals, active }) {
               }
 
               if (goal.id === 10) {
-                toast('🥇 Aquiririu a Medalha Poupador Fiel 🐖', {
+                toast.info('🥇 Medalha Poupador Fiel 🐖', {
                   position: 'top-right',
                   autoClose: 3000,
                   hideProgressBar: false,
@@ -135,7 +153,7 @@ function Badge({ data, goals, setGoals, active }) {
               }
 
               if (goal.id === 11) {
-                toast('🥇 Aquiririu a Medalha Nome Limpo 👍', {
+                toast.info('🥇 Medalha Nome Limpo 👍', {
                   position: 'top-right',
                   autoClose: 5000,
                   hideProgressBar: false,
@@ -150,7 +168,7 @@ function Badge({ data, goals, setGoals, active }) {
               }
 
               if (goal.id === 13) {
-                toast('🥇 Aquiririu a Medalha Pronto para Voar 🏆', {
+                toast.info('🥇 Medalha Pronto para Voar 🏆', {
                   position: 'top-right',
                   autoClose: 3000,
                   hideProgressBar: false,
@@ -161,7 +179,7 @@ function Badge({ data, goals, setGoals, active }) {
               }
 
               if (goal.id === 14) {
-                toast('🥇 Aquiririu a Medalha Gerador de Caixa ♻️', {
+                toast.info('🥇 Medalha Gerador de Caixa ♻️', {
                   position: 'top-right',
                   autoClose: 3000,
                   hideProgressBar: false,
@@ -176,7 +194,7 @@ function Badge({ data, goals, setGoals, active }) {
               }
 
               if (goal.id === 20) {
-                toast('🥇 Aquiririu a Medalha Investidor Inteligente 👑', {
+                toast.info('🥇 Medalha Investidor Inteligente 👑', {
                   position: 'top-right',
                   autoClose: 3000,
                   hideProgressBar: false,
@@ -187,7 +205,7 @@ function Badge({ data, goals, setGoals, active }) {
               }
 
               if (goal.id === 24) {
-                toast('🥇 Aquiririu a Medalha Disciplina Jedi 😎', {
+                toast.info('🥇 Medalha Disciplina Jedi 😎', {
                   position: 'top-right',
                   autoClose: 3000,
                   hideProgressBar: false,
@@ -197,8 +215,12 @@ function Badge({ data, goals, setGoals, active }) {
                 });
               }
 
+              if (goal.id === 24) {
+                Fase5();
+              }
+
               if (goal.id === 30) {
-                toast('🥇 Aquiririu a Medalha Liberdade Financeira 😎', {
+                toast.info('🥇 Medalha Liberdade Financeira 😎', {
                   position: 'top-right',
                   autoClose: 3000,
                   hideProgressBar: false,

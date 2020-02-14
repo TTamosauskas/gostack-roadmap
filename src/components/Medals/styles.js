@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   #quadro-de-medalhas {
-    background: #fff;
+    background: #f9f9f9;
     border: 1px solid orange;
     width: 100%;
     padding: 0 5px 5px 5px;
